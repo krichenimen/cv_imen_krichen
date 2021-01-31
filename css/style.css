@@ -1,12 +1,36 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+    color: #797979;
+}
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1280px;
+    /* margin: 0 auto; */
+    max-width: 1140px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    /* background: transparent; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 .menu{
-	width: 50%;
+	width: 60%;
 	display: flex;
 }
 .lienMenu{
@@ -17,4 +41,11 @@ header{
 }
 .lienMenu:hover,.menuActif{
 	background-color: #fff;
+}
+
+section{
+    background: url(../images/banniere.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
 }
