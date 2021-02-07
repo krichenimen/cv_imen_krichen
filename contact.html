@@ -8,19 +8,45 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<header>
+		<header class="container">
 			<img src="images/logo.svg" alt="logo">
 			<nav class="menu">
-				<a href="index.html" title="Accueil" class="lienMenu ">Accueil</a>
-				<a href="Apropos.html" title="Sportswear" class="lienMenu">À propos</a>
-				<a href="" title="Streetwear" class="lienMenu">Cursus</a>
-				<a href="" title="Streetwear" class="lienMenu">Expériences pro</a>
-				<a href="" title="Armwear" class="lienMenu">Portfolio</a>
+				<a href="index.html" title="Accueil" class="lienMenu">Accueil</a>
+				<a href="Apropos.html" title="Àpropos" class="lienMenu">À propos</a>
+				<a href="portfolio.html" title="Portfolio" class="lienMenu">Portfolio</a>
 				<a href="contact.html" title="Contact" class="lienMenu menuActif">Contact</a>
 			</nav>
 		</header>
-		<section class="about">
-			
+		<section class="contact container">
+			<div class="contact-info">
+				<h1 class="text-uppercase">CONTACT INFO</h1>
+				<address>
+					<a href="mailto:krichenimen1@gmail.com"><i class="fa fa-envelope-o"
+							aria-hidden="true"></i>krichenimen1@gmail.com</a><br>
+					<a href="tel:+33783306071"><i class="fa fa-mobile" aria-hidden="true"></i>+33
+						7 83 30 60 71</a>
+				</address>
+			</div>
+
+			<form action="" method="post">
+				<label for="nom">nom * </label>
+				<input type="text" name="nom" id="nom" />
+
+				<label for="prenom">prénom * </label>
+				<input type="text" name="prenom" id="prenom" />
+
+				<label for="tel">téléphone </label>
+				<input type="tel" name="tel" id="tel" />
+
+				<label for="mail">email * </label>
+				<input type="email" name="mail" id="mail" />
+
+				<label for="description">description *</label>
+				<textarea name="description" id="description" rows="6"></textarea>
+
+				<label></label>
+				<input class="btn-primary" type="submit" value="envoyer" />
+			</form>
 		</section>
 		<section class="socialIcon">
 			<a href="mailto:krichenimen1@gmail.com">
