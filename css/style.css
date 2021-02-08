@@ -397,7 +397,7 @@ footer p{
 }
 
 /* hamburger menu bar */
-@media (max-width: 700px) {
+@media (max-width: 992px) {
     .menu {
         display: none;
         border: 1px solid #eee;
@@ -412,7 +412,7 @@ footer p{
         padding-bottom: 7%;
     }
 }
-@media (min-width: 700px) {
+@media (min-width: 992px) {
     .menu-icon {
         display: none !important;
     }
