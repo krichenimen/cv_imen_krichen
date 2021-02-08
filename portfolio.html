@@ -10,11 +10,15 @@
 	<body>
 		<header class="container">
 			<img src="images/logo.svg" alt="logo">
-			<nav class="menu">
-				<a href="index.html" title="Accueil" class="lienMenu">Accueil</a>
-				<a href="Apropos.html" title="Àpropos" class="lienMenu">À propos</a>
-				<a href="portfolio.html" title="Portfolio" class="lienMenu menuActif">Portfolio</a>
-				<a href="contact.html" title="Contact" class="lienMenu">Contact</a>
+			<nav>
+				<input type="checkbox" class="menu-checkbox menu-btn" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="fa fa-bars"></span></label>
+				<ul class="menu">
+					<li><a href="index.html" title="Accueil" class="lienMenu">Accueil</a></li>
+					<li><a href="Apropos.html" title="Àpropos" class="lienMenu">À propos</a></li>
+					<li><a href="portfolio.html" title="Portfolio" class="lienMenu menuActif">Portfolio</a></li>
+					<li><a href="contact.html" title="Contact" class="lienMenu">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 		<section class="portfolio container">
@@ -26,51 +30,37 @@
 						<figcaption>Site web</figcaption>
 					</figure>
 				</li>
-
 				<li class="produit"><!-- Produit 2 -->
 					<figure>
 						<img src="images/image2.jpg" alt="work1" />
 						<figcaption>Carte visite</figcaption>
 					</figure>
 				</li>
-
 				<li class="produit"><!-- Produit 3 -->
 					<figure>
 						<img src="images/image3.jpg" alt="work1" />
 						<figcaption>Logo</figcaption>
 					</figure>
 				</li>
-
 				<li class="produit"><!-- Produit 4 -->
 					<figure>
 						<img src="images/image4.jpg" alt="work1" />
 						<figcaption>Affiche</figcaption>
 					</figure>
 				</li>
-
 				<li class="produit"><!-- Produit 5 -->
 					<figure>
 						<img src="images/image5.jpg" alt="work1" />
 						<figcaption>Logo</figcaption>
 					</figure>
 				</li>
-
 				<li class="produit"><!-- Produit 6 -->
 					<figure>
 						<img src="images/image6.jpg" alt="work1" />
 						<figcaption>Carte visite</figcaption>
 					</figure>
 				</li>
-				
-			
-			
-			
-				
-				
-				
-			
 			</ul>
-			
 		</section>
 		<section class="socialIcon">
 			<a href="mailto:krichenimen1@gmail.com">
@@ -84,7 +74,9 @@
 			</a>
 		</section>
 		<footer>
-
+			<div class="container">
+				<p>©2021 IMEN KRICHEN Tous droits réservés</p>
+			</div>
 		</footer>
 	</body>
 </html>

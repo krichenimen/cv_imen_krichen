@@ -10,11 +10,15 @@
 	<body>
 		<header class="container">
 			<img src="images/logo.svg" alt="logo">
-			<nav class="menu">
-				<a href="index.html" title="Accueil" class="lienMenu">Accueil</a>
-				<a href="Apropos.html" title="Àpropos" class="lienMenu">À propos</a>
-				<a href="portfolio.html" title="Portfolio" class="lienMenu">Portfolio</a>
-				<a href="contact.html" title="Contact" class="lienMenu menuActif">Contact</a>
+			<nav>
+				<input type="checkbox" class="menu-checkbox menu-btn" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="fa fa-bars"></span></label>
+				<ul class="menu">
+					<li><a href="index.html" title="Accueil" class="lienMenu">Accueil</a></li>
+					<li><a href="Apropos.html" title="Àpropos" class="lienMenu">À propos</a></li>
+					<li><a href="portfolio.html" title="Portfolio" class="lienMenu menuActif">Portfolio</a></li>
+					<li><a href="contact.html" title="Contact" class="lienMenu">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 		<section class="contact container">
@@ -60,7 +64,9 @@
 			</a>
 		</section>
 		<footer>
-
+			<div class="container">
+				<p>©2021 IMEN KRICHEN Tous droits réservés</p>
+			</div>
 		</footer>
 	</body>
 </html>
