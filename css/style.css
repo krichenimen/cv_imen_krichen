@@ -28,6 +28,10 @@ header {
 nav {
     width: 60%;
 }
+.btn-primary, .btn-primary:hover{
+    color: #fff !important;
+}
+
 .menu {
     width: 100%;
     display: flex;
@@ -162,7 +166,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .fa-bars:after {
 }
 
 .socialIcon a {
-    color: #fd8f7e;
+    color: #fd8f7e !important;
     font-size: 30px;
     margin: 28px 6px 12px 4px;
 }
@@ -323,12 +327,35 @@ progress::-webkit-progress-value {
 }
 
 /* Portfolio */
+.portfolio{
+    width: 68%;
+    margin-left: 4%;
+}
+.portfolio--title h2{
+    margin-top: 20px;
+    font-size: 33px;
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+.portfolio--title h3{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+.portfolio--title .contact-info{
+    width: 100%;
+}
+.portfolio--title .contact-info a {
+    font-size: 15px;
+}
 .listwork {
     display: flex;
     list-style: none;
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 4%;
+    
 }
 .work {
     width: 30%;
@@ -344,6 +371,7 @@ figure {
     transform: scale(0.9);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    box-shadow: 3px 6px 20px 0px #23222247;
 }
 figcaption {
     font-size: 15px;
@@ -460,6 +488,15 @@ figcaption {
         top: 60%;
     }
 }
+@media (max-width: 768px) {
+    .portfolio--title{
+        display: none;
+    }
+    .portfolio{
+        width: 100%;
+        margin-left: 0;
+    }
+}
 @media (max-width: 992px) {
     .contact {
         display: block;
@@ -545,4 +582,8 @@ figcaption {
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to right, #fd8f7e 0%, #fd5580 100%);
+}
+
+.__display-flex{
+    display: flex;
 }
